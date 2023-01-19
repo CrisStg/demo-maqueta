@@ -4,9 +4,10 @@
 
 .bkground{
     background:  linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://www.marvinn.com/wp-content/uploads/2022/06/Slide_01-2-1.png);
-    background-size: auto;
+    background-size: cover;
     background-position-y:center ;
     height: 80vh;
+    background-repeat: no-repeat;
     
 }
 
@@ -100,4 +101,18 @@
 
 .btn{
   border-radius: 0 ;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .bkground{
+      background:  linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/bkground-responsive.jpg);
+      background-size: cover;
+      background-position-y:center ;
+      height: 80vh;
+      background-repeat: no-repeat;
+      
+  }
 }
