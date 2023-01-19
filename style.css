@@ -23,7 +23,6 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 260px;
     height: 240px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -81,4 +80,20 @@
 
 .btn-outline-succes{
     color: fuchsia !important;
+}
+
+.elementToFadeInAndOut {
+    opacity: 1;
+    animation: fade 4s normal;
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+.hideme
+{
+    opacity:0;
 }
